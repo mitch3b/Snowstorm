@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>Snow Over Green Screen</title>
+
+<script src="snowstorm.js"></script>
+<script src="urlparser.js"></script>
+
+<script>
+	var urlParams = getAllUrlParams(window.location.href);
+
+	snowStorm.vMaxX = getValue(urlParams.vmaxx, 28);
+	snowStorm.vMaxY = getValue(urlParams.vmaxy, 15);
+	snowStorm.animationInterval = getValue(urlParams.animationinterval, 33);
+	snowStorm.flakesMax = getValue(urlParams.flakesmax, 128);
+	snowStorm.flakesMaxActive = getValue(urlParams.flakesmaxactive, 128);
+	snowStorm.useTwinkleEffect = getValue(urlParams.usetwinkleeffect, false);
+	snowStorm.followMouse = getValue(urlParams.followmouse, false);
+	snowStorm.freezeOnBlur = false;
+
+	snowStorm.randomizeWind();
+</script>
+
+<style>
+body {
+    background-color: #009933;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="container">
+
+ <div id="content">
+
+ </div>
+
+</div>
+
+<!-- stats/counter stuff for my web site. You don't need this for the snow effect to work. -->
+<script type="text/javascript" src="http://include.reinvigorate.net/re_.js"></script>
+<script type="text/javascript">
+try {
+reinvigorate.track("vq4zg-s08a9v69iv");
+} catch(err) {}
+</script>
+
+</body>
+</html>

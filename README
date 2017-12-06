@@ -10,3 +10,22 @@
 Homepage, demo, downloads etc.:
 http://www.schillmania.com/projects/snowstorm/
 
+Mitch's addition:
+There is now a green screen version used for things like streaming in OBS
+
+//Default values
+excludeMobile = false;
+vMaxX = 28;
+vMaxY = 15;
+animationInterval = 33;
+flakesMax = 128;
+flakesMaxActive = 128;
+useTwinkleEffect = false;
+followMouse = false;
+
+To set to your own value, include as an html parameter with the same name as above, for example:
+https://mitch3b.github.io/Snowstorm/greenScreen.html?vMaxX=100&vMaxY=1&useTwingleEffect=true
+
+To use in OBS, create a clr browser with the url above (with or without the params) and include a chroma key.
+
+Enjoy!
